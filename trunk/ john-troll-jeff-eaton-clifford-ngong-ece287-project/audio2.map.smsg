@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at audio2.v(354): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at audio2.v(18): object "HEX1" differs only in case from object "hex1" in the same scope
+Info (10281): Verilog HDL Declaration information at audio2.v(18): object "HEX0" differs only in case from object "hex0" in the same scope
