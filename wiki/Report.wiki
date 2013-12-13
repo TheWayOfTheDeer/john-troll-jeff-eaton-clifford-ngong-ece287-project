@@ -2,7 +2,7 @@
 #labels Featured
 *_Table of Contents_*
 <wiki:toc max_depth="1" />
-<br /><br />
+<br />
 =Introduction to problem=
 <p>
 Our project was to build a piano with the Altera Cyclone II DE2 board and Verilog HDL.  The board featured a 16x2 LCD display on which we displayed the title of a song and the keys the user had to press to play that song.  Input was provided by a connected PS/2 keyboard.  We chose to do this project because we honestly feel that not everyone has the opportunity to play a song on the piano, so we decided to bring the experience of a piano to the regular keyboard.  The four songs present in the trainer are Twinkle Twinkle Little Star, Happy Birthday, Mary Had a Little Lamb, and Jingle Bells.
