@@ -17,20 +17,21 @@
 
 	In order to interface audio the main objective we had was building a sine wave. We made a large case statement with the period of the sine wave being a variable the user can change. By making the period shorter, we made the frequency higher. For example we assigned our C4 key which is assigned to ‘Z’ to assign the value 179 to the period. In order to calculate the period needed we found a look up table that showed us what our desired frequency for each note was and we knew that period=48 gave us a frequency of 976 Hz from a piece of the John Loomis design. Knowing that a period of 48 gave us a frequency of 976Hz we tried doubling the period to see if it halved the frequency and it did. Using this ratio we were able to calculate the period needed for our other frequencies.
 
-Note	Frequency	Hz	Period
-C4	261.63	179
-C#	277.18	169
-D	293.66	160
-D#	311.13	151
-E	329.63	142
-F	349.23	134
-F#	369.99	127
-G	392	120
-G#	415.30	113
-A	440	107
-A#	466.16	101
-B	493.88	95
-C5	523.25	90
+Note    Frequency (Hz)    Period
+c4      261.63            179
+C#      277.18            169
+D       293.66            160
+D#      311.13            151
+E       329.63            142
+F       349.23            134
+F#      369.99            127
+G       392               120
+G#      415.30            113
+A       440               107
+A#      466.16            101
+B       493.88            95
+C5      523.25            90
+
 
 =Visual Display=
 
