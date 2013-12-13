@@ -1,5 +1,4 @@
 #summary The report for our final project
-#labels Featured
 *_Table of Contents_*
 <wiki:toc max_depth="1" />
 <br />
