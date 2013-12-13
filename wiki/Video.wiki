@@ -5,4 +5,4 @@
 (open in new tab)
 file:///C:/Users/John/Downloads/IMG_0428.MOV
 
-As the player presses the correct keys to twinkle twinkle little star the visual display tells the player what key to press next.
+As the player presses the correct keys to twinkle twinkle little star, the visual display tells the player what key to press next.
