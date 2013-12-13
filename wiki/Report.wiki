@@ -1,4 +1,5 @@
 #summary The report for our final project
+#labels Featured
 
 =Introduction to problem=
 <p>
