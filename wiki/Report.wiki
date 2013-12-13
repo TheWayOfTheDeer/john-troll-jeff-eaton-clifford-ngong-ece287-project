@@ -13,7 +13,7 @@
 
 	When interfacing the keyboard to the DE2 board an eight bit code is assigned to every key on the keyboard. The keys are also assigned codes for when the key is released. These codes were useful for helping us detect what key was being pressed. The break codes provided with enough information to tell us when a key is released. The key release codes are necessary so that there is no sound when a key is not being pressed. Fortunately the break codes all started with F0 which made it easy to identify when the key was released.  
 
-=Audio
+=Audio=
 
 	In order to interface audio the main objective we had was building a sine wave. We made a large case statement with the period of the sine wave being a variable the user can change. By making the period shorter, we made the frequency higher. For example we assigned our C4 key which is assigned to ‘Z’ to assign the value 179 to the period. In order to calculate the period needed we found a look up table that showed us what our desired frequency for each note was and we knew that period=48 gave us a frequency of 976 Hz from a piece of the John Loomis design. Knowing that a period of 48 gave us a frequency of 976Hz we tried doubling the period to see if it halved the frequency and it did. Using this ratio we were able to calculate the period needed for our other frequencies.
 
