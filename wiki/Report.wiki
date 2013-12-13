@@ -51,6 +51,8 @@ For interfacing the visual display we referenced the John Loomis project lcdlab3
 The main purpose of our project was to teach people how to play a few simple songs on the piano with just some verilog and a PS/2 keyboard. (and a very expensive DE2 board)  This was a fun project that taught us a lot about verilog, code reading, and hardware design in general.  Our advice for people who might like to replicate this project is to break it down into little sub projects and combine them at the end once you have each component working by itself.
 </p>
 
+<wiki:video url="http://www.youtube.com/watch?v=NDFNMUTJvJo"/>
+
 =What we could improve on=
 <p>
 If we had more time it would be nice to add other octaves to the keyboard.  We could do this either by having a switch on the DE2 board that changes the frequencies assigned to certain keys or by just adding more assignments to other keys on the keyboard.  Another big thing we wish we could add was chord support, as playing only one note at a time can get boring and is very limiting.  In order to do this we were thinking about having the output cycle really fast (every clock cycle) between each notes in the chord. To do this it seems like we would need to assign letters outside of the keyboard we already have in order to play the chords. For example we could put "1" as a G chord and so on. Lastly we could add more songs to the project very easily, but figuring out what keys to press and re creating the songs in case statements takes time that we didn't have. So there are some possible extensions and improvements that any future re-creators of this project can do pretty easily.
