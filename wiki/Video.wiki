@@ -1,7 +1,0 @@
-#Our presentation of results
-
-= Video =
-
-<wiki:video url="http://www.youtube.com/watch?v=NDFNMUTJvJo"/>
-
-As the player presses the correct keys to twinkle twinkle little star (3 other songs present but not shown in video), the visual display tells the player what key to press next.
