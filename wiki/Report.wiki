@@ -1,0 +1,45 @@
+#The report for our final project.
+
+= Introduction to problem =
+
+
+	Our project was to build and teach others people how to play the twinkle twinkle little star song on a computer keyboard. We chose to do this project because we honestly feel that not everyone has the opportunity to play a song on the piano, so we decided to bring the experience of a piano on a regular keyboard.  We also implemented a play-along tutorial that shows players how to play the twinkle twinkle little star song. Our tutorial tells the players what keys to press on the keyboard in order the produce the correct sound frequencies of the song.
+
+=Background=
+
+	Our project is mainly powered by Verilog language.  We borrowed the coded to produce sound from a predesigned project we found from the John Loomis website. We then tested the project and redesign it to fit our needs. Then came one of our most challenging task, linking the keyboard to the DE2 board.  So we could press a certain key and get a signal on the DE2 board. After we figured out how to link the two together, we assign 8 keys which were (‘Z’, ‘X’, ‘C’, ‘V’, ‘B’, ‘N’, ‘M’, ‘,’) which were assign different frequencies.
+
+=Keyboard=
+
+	When interfacing the keyboard to the DE2 board an eight bit code is assigned to every key on the keyboard. The keys are also assigned codes for when the key is released. These codes were useful for helping us detect what key was being pressed. The break codes provided with enough information to tell us when a key is released. The key release codes are necessary so that there is no sound when a key is not being pressed. Fortunately the break codes all started with F0 which made it easy to identify when the key was released.  
+
+=Audio
+
+	In order to interface audio the main objective we had was building a sine wave. We made a large case statement with the period of the sine wave being a variable the user can change. By making the period shorter, we made the frequency higher. For example we assigned our C4 key which is assigned to ‘Z’ to assign the value 179 to the period. In order to calculate the period needed we found a look up table that showed us what our desired frequency for each note was and we knew that period=48 gave us a frequency of 976 Hz from a piece of the John Loomis design. Knowing that a period of 48 gave us a frequency of 976Hz we tried doubling the period to see if it halved the frequency and it did. Using this ratio we were able to calculate the period needed for our other frequencies.
+
+Note	Frequency	Hz	Period
+C4	261.63	179
+C#	277.18	169
+D	293.66	160
+D#	311.13	151
+E	329.63	142
+F	349.23	134
+F#	369.99	127
+G	392	120
+G#	415.30	113
+A	440	107
+A#	466.16	101
+B	493.88	95
+C5	523.25	90
+
+=Visual Display=
+
+	For interfacing the visual display we referenced a John Loomis project that showed that the visual display had two lines that we could write letters and numbers into which responded to certain codes. We had a large case statement that we used to change a letter in one of the rows. We wanted to change the letter every time the correct note was played to the correct note. In the case we had three inputs for each case that we had to examine. The 4 bits from hex1 and 4 bits from hex2 are the two values that are assigned to a letter. We also wanted an expected code input that would make it so that the note desired only changed when the user played the right note.
+
+=Conclusion=
+
+The main purpose of our project was to teach people how to play the twinkle twinkle little star song with just a few computer hardware and Verilog code.  This was a fun project that required a great understanding in hardware design.  Our advice for people who might like to replicate is to break the project down into little sub projects. Integrating the keyboard with DE2 board and then adding the sound frequencies to the respective keys.
+
+=What we could improve on=
+
+If we had more time it would be nice to add other octaves to the keyboard. We could do this by having a switch on the DE2 board that changes the frequencies played when the keys on the PS2 keyboard are pressed. Another idea would be to add chords to the piano. In order to do this we were thinking about having an individual frequency rotate really fast (every clock cycle) in between the notes in the chord. To do this it seems like we would need to assign letters outside of the keyboard we already have in order to play the chords. For example we could put "1" as a G chord and so on. Lastly we could add more songs to the project very easily, it's just figuring out what keys to press and re creating the songs takes time that we didn't have. So there are some possible extensions any future re-creators of this project can do pretty easily.
