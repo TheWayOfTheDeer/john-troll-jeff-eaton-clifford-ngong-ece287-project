@@ -1,0 +1,1 @@
+Originally this project was going to be a sequencer that let the user record their song and then play it back for them to play along or add to, but we changed it to a keyboard that teaches the user how to play four different songs: Twinkle Twinkle Little Star, Happy Birthday, Mary Had a Little Lamb, and Jingle Bells.
